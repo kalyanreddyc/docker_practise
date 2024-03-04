@@ -1,3 +1,0 @@
-FROM ubuntu:latest
-ENTRYPOINT ["echo", "Hello"]
-CMD ["DrillDevOps from combined ENTRYPOINT and CMD"]
