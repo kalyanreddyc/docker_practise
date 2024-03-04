@@ -1,0 +1,11 @@
+# Builder stage
+FROM openjdk:17 as builder
+WORKDIR /app
+COPY HelloWorld.java /app/
+RUN javac HelloWorld.java
+
+# Final stage
+FROM openjdk:17-slim
+WORKDIR /app
+COPY --from=builder /app/HelloWorld.class /app/
+CMD ["java", "HelloWorld"]
