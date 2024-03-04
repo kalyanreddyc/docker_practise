@@ -1,0 +1,1 @@
+# This repo contains Scenarios and Dockerfile to undertsand CMD vs ENTRYPOINT, ADD vs COPY
