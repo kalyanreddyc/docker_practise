@@ -1,0 +1,13 @@
+# Start from a base image
+FROM ubuntu:latest
+
+# Set the working directory in the container
+WORKDIR /app
+
+# Add individual files, directories, or remote file URLs from the local directory to the container
+ADD ./apache-maven-3.9.6-bin.tar.gz /app/
+ADD ./sample.txt /app/sample.txt
+ADD https://updates.jenkins.io/download/war/2.447/jenkins.war /app/jenkins.war
+
+# Any other instructions...
+CMD ["bash"]

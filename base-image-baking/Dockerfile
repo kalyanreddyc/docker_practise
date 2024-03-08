@@ -2,7 +2,7 @@
 FROM registry.access.redhat.com/ubi8/ubi:8.9
 
 # Label the image
-LABEL maintainer="Your Name <your.email@example.com>"
+LABEL maintainer="DrillDevOps <drilldevops@gmail.com>"
 LABEL description="Java 17 Base Image with Essential Tools"
 
 # Set environment variables for Java Version

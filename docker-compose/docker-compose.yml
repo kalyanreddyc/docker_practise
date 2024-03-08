@@ -1,0 +1,43 @@
+version: '3.8'
+
+services:
+  web:
+    image: nginx:latest
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+    depends_on:
+      - app
+    networks:
+      - webnet
+
+  app:
+    build: 
+      context: .
+      dockerfile: /Users/kalyanreddy/drilldevops/git-repos/automations/docker-sessions-local/docker-compose/Dockerfile
+    ports: 
+      - "3000:3000"
+    environment:
+      - DATABASE_URL=postgres://admin:admin@123:5432/dbname
+    depends_on:
+      - db
+    networks:
+      - webnet
+
+  db:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin@123
+      POSTGRES_DB: dbname
+    volumes:
+      - db-data:/var/lib/postgresql/data
+    networks:
+      - webnet
+
+volumes:
+  db-data:
+
+networks:
+  webnet:
