@@ -1,0 +1,12 @@
+# Start from a base image
+FROM ubuntu:latest
+
+# Set the working directory in the container
+WORKDIR /app
+
+# Copy individual files or entire directories from the local directory to the container
+COPY ./sample.txt /app/sample.txt
+COPY ./config /app/config
+
+# Any other instructions...
+CMD ["pwd"]
