@@ -18,8 +18,8 @@
 `docker compose up`  :  start up your application with Docker Compose. \
 `docker compose down` :  stop and remove the resources created by Compose. \
 `docker compose build` :  build or rebuild services. \
-`docker-compose up --build` : The --build flag forces the build to happen again, which can help if there have been any changes. \
-## Other commands  \
+`docker-compose up --build` : The --build flag forces the build to happen again, which can help if there have been any changes. 
+## Other commands  
 `docker compose logs`  \
 `docker compose exec`   \
 `docker compose restart`  \
