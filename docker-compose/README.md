@@ -16,13 +16,13 @@
 
 ## Docker Compose Commands
 `docker compose up`  :  start up your application with Docker Compose. \
-`docker compose down` :  stop and remove the resources created by Compose.
-`docker compose build` :  build or rebuild services.
-`docker-compose up --build` : The --build flag forces the build to happen again, which can help if there have been any changes.
-## Other commands
-`docker compose logs` 
-`docker compose exec` 
-`docker compose restart`
+`docker compose down` :  stop and remove the resources created by Compose. \
+`docker compose build` :  build or rebuild services. \
+`docker-compose up --build` : The --build flag forces the build to happen again, which can help if there have been any changes. \
+## Other commands  \
+`docker compose logs`  \
+`docker compose exec`   \
+`docker compose restart`  \
 
 ## Real-time Scenarios and Demos
 ### Scenario : Setting up a simple web application with a front-end service, a back-end service, and a database.
