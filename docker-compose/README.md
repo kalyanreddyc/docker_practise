@@ -22,7 +22,7 @@
 ## Other commands  
 `docker compose logs`  \
 `docker compose exec`   \
-`docker compose restart`  \
+`docker compose restart`  
 
 ## Real-time Scenarios and Demos
 ### Scenario : Setting up a simple web application with a front-end service, a back-end service, and a database.
